@@ -1,0 +1,25 @@
+<mvc:View
+    controllerName="my.company.userinfoprjapp.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <VBox id="vbox1">
+							<Label id="label1" text="Display Name: {userModel>/decodedJWTToken/given_name} 
+                                {userModel>/decodedJWTToken/family_name} 
+                                ({userModel>/decodedJWTToken/user_id})"></Label>
+							<Label id="label2" text="Email: {userModel>/decodedJWTToken/email}"></Label>
+							<Label id="label3" text="First Name: {userModel>/decodedJWTToken/given_name}"></Label>
+							<Label id="label4" text="Last Name: {userModel>/decodedJWTToken/family_name}"></Label>
+						</VBox>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
